@@ -1,0 +1,83 @@
+/* Font */
+
+@font-face {
+    font-family: metalFont;
+    src: url("public/assets/font/MetalMania-Regular.ttf");
+}
+
+/*---------- Initialisation du HTML ----------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: grey !important;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------- Partie du Header ----------*/
+
+.navbar {
+    background-color: black;
+}
+
+h1 {
+    font-family: metalFont;
+}
+
+.logoSite {
+    width: 60px;
+}
+
+.nav-link {
+    color: grey !important;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+.connectButton {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-family: metalFont !important;
+    background-color: white;
+    box-shadow: inset 0px 1px 0px rgba(63, 63, 63, 0.8),0px 1px 3px rgba(56, 56, 56, 0.3);
+    border-color: #111;
+    color: white;
+    text-shadow: -1px -1px 1px rgba(0,0,0,1);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#333));
+}
+
+@media screen and (min-height: 576px){
+
+}
+
+@media screen and (min-height: 992px){
+
+}
+
+@media screen and (min-height: 1200px){
+
+}
+
+
+/*---------- Partie du Main ----------*/
+
+
+/*---------- Partie du Footer ----------*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
