@@ -59,15 +59,15 @@ body {
 }
 
 .blankSpace {
-    height: 70px;
+    height: 60px;
 }
 
 h1 {
     text-align: center;
     font-family: "metalFont", serif;
-    font-size: 1.3rem !important;
-    padding: 15px;
-    color: black !important;
+    font-size: 1.0rem !important;
+    width: 50%;
+    color: white !important;
 }
 
 @media screen and (min-height: 576px) {}
@@ -79,6 +79,18 @@ h1 {
 
 /*---------- Partie du Main ----------*/
 
+.carouselContainer {
+    margin-top: 68px;
+}
+
+div .row {
+    height: 80vh;
+}
+
+.carousel-inner {
+    border-radius: 10px !important;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(208deg) brightness(107%) contrast(105%) !important;
 }
@@ -87,7 +99,6 @@ h1 {
 .carousel-control-next:hover,
 .carousel-control-next:focus {
     color: white !important;
-
 }
 
 .carousel-control-prev,
@@ -100,9 +111,13 @@ h1 {
     margin-bottom: 0.1rem !important;
 }
 
-.carouselAnnounce {
-    background: black;
+h3 {
     font-family: "metalFont", serif;
+    font-size: 2.5rem;
+}
+
+a:hover {
+    color: white !important;
 }
 
 .card {
@@ -115,26 +130,9 @@ h1 {
     text-decoration: none;
     overflow: hidden;
     transition-property: color;
-    transition-delay: 0.15s;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     border: 0px black !important;
     border-radius: 0px !important;
-}
-
-.card.hover {
-    color: white;
-    transition-delay: 0;
-}
-
-.card,
-.card__image,
-.card__image::after,
-.card__author,
-.card__body,
-.card__foot,
-.card__border {
-    transition-duration: 0.4s;
-    transition-timing-function: cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 .card__head {
@@ -148,12 +146,6 @@ h1 {
     left: 0;
     bottom: 0;
     color: white;
-    transition-property: transform;
-    transition-delay: 0.15s;
-}
-
-.card.hover .card__author {
-    transition-delay: 0;
 }
 
 .card__image {
@@ -162,34 +154,19 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
+
+    /*width: auto;
+    height: auto;
+
+
+
+    object-fit: cover;
+    object-position: center;
+    transform-origin: top center;*/
+
     background-size: cover;
     background-position: center;
-    background-image: url('../img/Actu/1/album_mh.jpg');
     transform-origin: top center;
-    transition-property: transform;
-    transition-delay: 0.15s;
-}
-
-.card__image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.5;
-    background: linear-gradient(30deg, rgba(26, 42, 99, 0.85), rgba(26, 42, 99, 0.5));
-    transition-property: opacity;
-    transition-delay: 0.15s;
-}
-
-.card.hover .card__image {
-    transition-delay: 0;
-}
-
-.card.hover .card__image::after {
-    opacity: 1;
-    transition-delay: 0;
 }
 
 .card__body {
@@ -198,10 +175,6 @@ h1 {
     background: black;
     transition-property: transform;
     transition-delay: 0.15s;
-}
-
-.card.hover .card__body {
-    transition-delay: 0;
 }
 
 .card__headline {
@@ -223,33 +196,6 @@ h1 {
     padding: 0 2em 2em;
     opacity: 0;
     transition-property: opacity;
-}
-
-.card.hover .card__foot {
-    opacity: 1;
-    transition-delay: 0.15s;
-}
-
-.card__link {
-    color: currentColor;
-    text-decoration: none;
-    border-bottom: 2px solid black;
-}
-
-.card__border {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: black;
-    transform: scaleY(0);
-    transition-property: transform;
-}
-
-.card.hover .card__border {
-    transform: none;
-    transition-delay: 0.15s;
 }
 
 .author {
