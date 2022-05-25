@@ -11,8 +11,6 @@
     height: 100%;
     width: 90%;
     background-color: black;
-    /*margin-top: 5%;
-    margin-bottom: 5%;*/
     margin-left: auto;
     margin-right: auto;
     border-top: solid 1px rgba(255, 255, 255, .5);
@@ -28,7 +26,6 @@
 
 .frame-short {
     height: 100%;
-    /*margin-top: 50px;*/
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
 }
 
@@ -72,7 +69,7 @@ li {
     padding-bottom: 10px;
     color: #ffffff;
     text-decoration: none;
-    border-bottom: solid 2px #1059FF;
+    border-bottom: solid 2px #838383;
     transition: all .25s ease;
     cursor: pointer;
 }
@@ -89,7 +86,7 @@ li {
     cursor: pointer;
     color: #ffffff;
     text-decoration: none;
-    border-bottom: solid 1px #1059FF;
+    border-bottom: solid 1px #838383;
     padding-bottom: 10px;
 }
 
@@ -107,7 +104,6 @@ li {
     font-weight: 300;
     padding-left: 37px;
     padding-right: 37px;
-    /*padding-top: 55px;*/
     transition: opacity .5s ease, transform .5s ease;
 }
 
@@ -123,7 +119,6 @@ li {
     font-weight: 300;
     padding-left: 37px;
     padding-right: 37px;
-    /*padding-top: 55px;*/
     position: relative;
     top: -375px;
     left: 400px;
@@ -228,10 +223,6 @@ label {
     display: block;
 }
 
-:focus {
-    outline: none;
-}
-
 .form-signin input:focus,
 textarea:focus,
 .form-signup input:focus,
@@ -248,74 +239,55 @@ textarea:focus {
     text-transform: uppercase;
     font-size: 13px;
     text-align: center;
-    color: #ffffff;
     padding-top: 8px;
     width: 100%;
     height: 35px;
     border: none;
     border-radius: 20px;
     margin-top: 23px;
-    background-color: #1059FF;
+    background-color: rgb(155, 155, 155);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-signup a {
+    color: black !important;
 }
 
 .btn-signin {
-    float: left;
-    padding-top: 8px;
-    width: 100%;
-    height: 35px;
-    border: none;
-    border-radius: 20px;
-    margin-top: -8px;
-    color: white !important;
-    text-decoration: none !important;
-}
-
-.btn-animate {
     float: left;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 13px;
     text-align: center;
-    color: rgba(255, 255, 255, 1);
     padding-top: 8px;
     width: 100%;
     height: 35px;
     border: none;
     border-radius: 20px;
     margin-top: 23px;
-    background-color: rgba(16, 89, 255, 1);
+    background-color: rgb(155, 155, 155);
     left: 0px;
     top: 0px;
-    transition: all .5s ease, top .5s ease .5s, height .5s ease .5s, background-color .5s ease .75s;
-}
-
-.btn-animate-grow {
-    width: 130%;
-    height: 625px;
-    position: relative;
-    left: -55px;
-    top: -420px;
-    color: rgba(255, 255, 255, 0);
-    background-color: rgba(255, 255, 255, 1);
-}
-
-a.btn-signup:hover,
-a.btn-signin:hover {
+    text-decoration: none !important;
     cursor: pointer;
-    background-color: #0F4FE6;
-    transition: background-color .5s;
 }
+
+.form-signin a {
+    color: black !important;
+}
+
 
 .forgot {
-    height: 20px;
+    height: 30px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    /*padding-top: 24px;*/
-    /*margin-top: -535px;*/
     border-top: solid 1px rgba(255, 255, 255, .3);
     transition: all 0.5s ease;
+    text-decoration: none ;
+    cursor: pointer;
 }
 
 .forgot-left {
@@ -330,98 +302,10 @@ a.btn-signin:hover {
 .forgot a {
     color: rgba(255, 255, 255, .3);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
 }
 
-.welcome {
-    width: 100%;
-    height: 50px;
-    position: relative;
-    color: rgba(35, 43, 85, 0.75);
-    opacity: 0;
-    transition: transform 1.5s ease .25s, opacity .1s ease 1s;
-}
-
-.welcome-left {
-    transform: translateY(-780px);
-    opacity: 1;
-}
-
-.cover-photo {
-    height: 150px;
-    position: relative;
-    left: 0px;
-    top: -900px;
-    background: linear-gradient(rgba(35, 43, 85, 0.75), rgba(35, 43, 85, 0.95)), url(https://img.icons8.com/bubbles/100/000000/user.png);
-    background-size: cover;
-    opacity: 0;
-    transition: all 1.5s ease 0.55s;
-}
-
-.cover-photo-down {
-    top: -575px;
-    opacity: 1;
-}
-
-.profile-photo {
-    height: 125px;
-    width: 125px;
-    position: relative;
-    border-radius: 70px;
-    left: 155px;
-    top: -1000px;
-    background: url(https://img.icons8.com/bubbles/100/000000/user.png);
-    background-size: 100% 135%;
-    background-position: 100% 100%;
-    opacity: 0;
-    transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-    border: solid 3px #ffffff;
-}
-
-.profile-photo-down {
-    top: -636px;
-    opacity: 1;
-}
-
-h1 {
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.btn-goback {
-    position: relative;
-    margin-right: auto;
-    top: -400px;
-    float: left;
-    padding: 8px;
-    width: 83%;
-    margin-left: 37px;
-    margin-right: 37px;
-    height: 35px;
-    border-radius: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 13px;
-    text-align: center;
-    color: #1059FF;
-    margin-top: -8px;
-    border: solid 1px #1059FF;
-    opacity: 0;
-    transition: top 1.5s ease 0.35s, opacity .75s ease .5s;
-    text-decoration: none;
-}
-
-.btn-goback-up {
-    top: -1080px;
-    opacity: 1;
-}
-
-a.btn-goback:hover {
-    cursor: pointer;
-    background-color: #0F4FE6;
-    transition: all .5s;
-    color: #ffffff;
+.forgot a:hover {
+    color: rgba(255, 255, 255, 0.582);
 }
