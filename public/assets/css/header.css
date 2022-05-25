@@ -1,0 +1,79 @@
+/* Font */
+
+@font-face {
+    font-family: "metalFont";
+    src: url("../font/MetalMania-Regular.ttf");
+}
+
+/*---------- Initialisation du HTML ----------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/wallpaper.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/*---------- Partie du Header ----------*/
+
+.navbar {
+    background-color: black;
+}
+
+.nav-link {
+    color: grey !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.logoSite {
+    width: 4rem;
+}
+
+.connectButton {
+    height: 2.5rem;
+    width: 7rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0px 1px 0px rgba(63, 63, 63, 0.8), 0px 1px 3px rgba(56, 56, 56, 0.3);
+    border-color: #111;
+
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+
+.connectButton a {
+    color: black;
+    text-decoration: none;
+}
+
+.connectButton:hover {
+    box-shadow: 0 0 30px 0 #000000 inset, 0 0 20px 2px #000000;
+    border: 3px solid #000000;
+}
+
+h1 {
+    text-align: center;
+    font-family: "metalFont", serif;
+    font-size: 1.0rem !important;
+    width: 50%;
+    color: white !important;
+}
+
+@media screen and (min-height: 576px) {}
+
+@media screen and (min-height: 992px) {}
+
+@media screen and (min-height: 1200px) {}
