@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -9,8 +8,7 @@
     <link rel="stylesheet" href="public/assets/css/footer.css">
     <link rel="stylesheet" href="public/assets/css/connection.css">
     <link rel="shortcut icon" href="public/assets/img/logo/zestofmetal.ico" type="image/x-icon">
-    <meta name="description"
-        content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
+    <meta name="description" content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>
 </head>
 
@@ -65,21 +63,21 @@
                 <div class="formContainer">
                     <form class="form-signin" action="" method="post" name="form">
                         <label for="username">Pseudo</label>
-                        <input class="form-styling" type="text" name="username" placeholder="" />
+                        <input class="form-styling" type="text" name="username" placeholder="" pattern="[a-zA-Z0-9-_]{2,36}"/>
                         <label for="password">Mot de passe</label>
-                        <input class="form-styling" type="text" name="password" placeholder="" />
-                        <a class="btn-signin">Se connecter au compte</a>
+                        <input class="form-styling" type="text" name="password" placeholder="" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm"/>
+                        <input type="button" value="SE CONNECTER" class="btn-signin text-center"></input>
                     </form>
                     <form class="form-signup" action="" method="post" name="form">
                         <label for="username">Pseudo</label>
-                        <input class="form-styling" type="text" name="username" placeholder="" />
+                        <input class="form-styling" type="text" name="username" placeholder="" pattern="[a-zA-Z0-9-_]{2,36}"/>
                         <label for="email">Email</label>
-                        <input class="form-styling" type="text" name="email" placeholder="" />
+                        <input class="form-styling" type="text" name="email" placeholder="" pattern="/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g"/>
                         <label for="password">Mot de passe</label>
-                        <input class="form-styling" type="text" name="password" placeholder="" />
+                        <input id="pswCheck1" class="form-styling" type="text" name="password" placeholder="" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm"/>
                         <label for="password">Confirmation du mot de passe</label>
-                        <input class="form-styling" type="text" name="confirmpassword" placeholder="" />
-                        <a class="btn-signup">S'ENREGISTRER</a>
+                        <input id="pswCheck2" class="form-styling" type="text" name="confirmpassword" placeholder="" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm"/>
+                        <input type="button" value="S'ENREGISTRER" class="btn-signup text-center"></input>
                     </form>
                 </div>
                 <div class="forgot"> <a href="#">Vous avez oublié votre mot de passe ?</a></div>

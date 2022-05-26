@@ -32,6 +32,13 @@ body {
 
 .nav-link {
     color: grey !important;
+    font-size: 1.2rem !important;
+    text-align: end;
+    text-transform: none;
+}
+
+.nav-item {
+    padding: 0 !important;
 }
 
 .nav-link:hover {
@@ -49,7 +56,6 @@ body {
     background-color: white;
     box-shadow: inset 0px 1px 0px rgba(63, 63, 63, 0.8), 0px 1px 3px rgba(56, 56, 56, 0.3);
     border-color: #111;
-
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
