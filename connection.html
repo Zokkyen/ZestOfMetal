@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -8,7 +9,8 @@
     <link rel="stylesheet" href="public/assets/css/footer.css">
     <link rel="stylesheet" href="public/assets/css/connection.css">
     <link rel="shortcut icon" href="public/assets/img/logo/zestofmetal.ico" type="image/x-icon">
-    <meta name="description" content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
+    <meta name="description"
+        content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>
 </head>
 
@@ -52,6 +54,7 @@
 
     <!-- Corps de la page -->
     <main>
+        <!-- Formulaire d'inscription / connexion -->
         <div class="container">
             <div class="frame">
                 <div class="nav">
@@ -62,25 +65,89 @@
                 </div>
                 <div class="formContainer">
                     <form class="form-signin" action="" method="post" name="form">
+
                         <label for="username">Pseudo</label>
-                        <input class="form-styling" type="text" name="username" placeholder="" pattern="[a-zA-Z0-9-_]{2,36}"/>
+                        <input class="form-styling" type="text" name="username" placeholder="" required
+                            pattern="[a-zA-Z0-9-_]{2,36}" />
+
                         <label for="password">Mot de passe</label>
-                        <input class="form-styling" type="text" name="password" placeholder="" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm"/>
-                        <input type="button" value="SE CONNECTER" class="btn-signin text-center"></input>
+                        <input class="form-styling" type="password" name="passwordUser" placeholder="" required
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+
+                        <button type="submit" class="btn-signin">SE CONNECTER</button>
                     </form>
                     <form class="form-signup" action="" method="post" name="form">
+
                         <label for="username">Pseudo</label>
-                        <input class="form-styling" type="text" name="username" placeholder="" pattern="[a-zA-Z0-9-_]{2,36}"/>
+                        <input class="form-styling" type="text" name="username" placeholder="" required
+                            pattern="[a-zA-Z0-9-_]{2,36}" />
+
                         <label for="email">Email</label>
-                        <input class="form-styling" type="text" name="email" placeholder="" pattern="/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g"/>
-                        <label for="password">Mot de passe</label>
-                        <input id="pswCheck1" class="form-styling" type="text" name="password" placeholder="" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm"/>
+                        <input class="form-styling" type="email" name="email" placeholder="" required
+                            pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+
+                            <label for="password">Mot de passe</label>
+                        <input id="pswCheck1" class="form-styling" type="password" name="password" placeholder="" required
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+
                         <label for="password">Confirmation du mot de passe</label>
-                        <input id="pswCheck2" class="form-styling" type="text" name="confirmpassword" placeholder="" pattern="/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm"/>
-                        <input type="button" value="S'ENREGISTRER" class="btn-signup text-center"></input>
+                        <input id="pswCheck2" class="form-styling" type="password" name="confirmassword" placeholder=""
+                            required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+
+                        <div class="switchPwd">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p class="fs-5">Montrer</p>
+                        </div>
+
+                        <button type="submit" class="btn-signup">S'ENREGISTRER</button>
                     </form>
                 </div>
-                <div class="forgot"> <a href="#">Vous avez oublié votre mot de passe ?</a></div>
+                <div class="forgot">
+                    <a data-bs-toggle="modal" data-bs-target="#pswModal">
+                        Vous avez oublié votre mot de passe ?
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal retrouver son mot de passe + confirmation -->
+        <div class="modal fade" id="pswModal" aria-hidden="true" aria-labelledby="pswModalLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pswModalLabel">Retrouver votre mot de passe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input class="pswInputModal" type="email" name="email" placeholder="Adresse mail" required
+                        pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#validModal"
+                            data-bs-toggle="modal">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="validModal" aria-hidden="true" aria-labelledby="validModalLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="validModalLabel">Un mail vous a été envoyé !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="validConfirm" src="public/assets/img/ICO/valid.png" alt="Logo de validation">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -107,6 +174,7 @@
 
     <!-- Partie des ajouts de scripts personnels -->
     <script src="public/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/js/jquery-3.6.0.min.js"></script>
     <script src="public/assets/js/script.js"></script>
 </body>
 
