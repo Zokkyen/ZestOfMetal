@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="public/assets/css/header.css">
     <link rel="stylesheet" href="public/assets/css/footer.css">
     <link rel="stylesheet" href="public/assets/css/connection.css">
-    <link rel="shortcut icon" href="public/assets/img/logo/zestofmetal.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="public/assets/img/logo/zestofmetal.png" type="image/x-icon">
     <meta name="description"
         content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>
@@ -21,7 +21,7 @@
             <div class="container-fluid">
 
                 <a href="index.html">
-                    <img class="logoSite" src="public/assets/img/logo/zestofmetal.ico" alt="Logo du site">
+                    <img class="logoSite" src="public/assets/img/logo/zestofmetal.png" alt="Logo du site">
                 </a>
                 <h1 class="m-0">Le site d'Actus Metal qui envoi du poney</h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -73,7 +73,6 @@
                         <label for="password">Mot de passe</label>
                         <input class="form-styling" type="password" name="passwordUser" placeholder="" required
                             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
-
                         <button type="submit" class="btn-signin">SE CONNECTER</button>
                     </form>
                     <form class="form-signup" action="" method="post" name="form">
@@ -87,20 +86,12 @@
                             pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
 
                             <label for="password">Mot de passe</label>
-                        <input id="pswCheck1" class="form-styling" type="password" name="password" placeholder="" required
+                        <input id="pswCheck1" class="form-styling pwdSvg" type="password" name="password" placeholder="" required
                             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
 
                         <label for="password">Confirmation du mot de passe</label>
-                        <input id="pswCheck2" class="form-styling" type="password" name="confirmassword" placeholder=""
+                        <input id="pswCheck2" class="form-styling pwdSvg" type="password" name="confirmassword" placeholder=""
                             required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
-
-                        <div class="switchPwd">
-                            <label class="switch">
-                                <input type="checkbox">
-                                <span class="slider round"></span>
-                            </label>
-                            <p class="fs-5">Montrer</p>
-                        </div>
 
                         <button type="submit" class="btn-signup">S'ENREGISTRER</button>
                     </form>

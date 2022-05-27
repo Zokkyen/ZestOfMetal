@@ -48,7 +48,9 @@ body {
 }
 
 .logoSite {
-    width: 4rem;
+    width: 3.5rem;
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .connectButton {
