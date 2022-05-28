@@ -54,6 +54,7 @@ body {
 }
 
 .connectButton {
+    display: inline;
     height: 2.5rem;
     width: 7rem;
     border-radius: 10px;
@@ -80,6 +81,15 @@ h1 {
     font-size: 1.0rem !important;
     width: 50%;
     color: white !important;
+}
+
+.accountDisp {
+    display: none;
+}
+
+.sizeAccountLogo {
+    width: 30px;
+    height: 30px;
 }
 
 @media screen and (min-height: 576px) {}

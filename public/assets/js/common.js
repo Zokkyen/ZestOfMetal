@@ -1,5 +1,4 @@
 /* Petite boutade cachée */
-
 let id = null;
 let counTreasure = 0;
 let bodySurprise = document.querySelector('body');

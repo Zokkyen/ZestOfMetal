@@ -47,12 +47,18 @@ connectBtn.addEventListener('click', () => {
             let connectCheck = new bootstrap.Modal(document.getElementById('connectCheck'))    
             connectCheck.show();
 
+            let connectButton = document.querySelector('.connectButton');    
+            connectButton.parentNode.children[1].style.display = 'none';
+
+            let accountDisp = document.querySelector('.accountDisp');
+            accountDisp.parentNode.children[2].style.display = 'block';
+
             if((userInputModal.value == "Zokkyen") && (pswInputModal.value == "LaManu80!")){
-                connectCheck.hide();
-                userModalConnexion.innerText = `Bonjour mon Admin préféré !`
+                userModalConnexion.innerText = `Bonjour mon Admin préféré !`;
             }
             else {
-                userModalConnexion.innerText = `Bonjour ${userInputModal.value}, bienvenue sur votre compte.`
+                userModalConnexion.innerText = `Bonjour ${userInputModal.value}, bienvenue sur votre compte.`;
+                
             }
 
             const myTimeout = setTimeout(() => {
