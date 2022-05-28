@@ -124,3 +124,17 @@ a:hover {
     opacity: 0.8;
     font-weight: 800;
 }
+
+/* SUUUUURPRISE */
+
+#surprise, #surprise2 {
+    position: absolute;  
+    display: block;
+    top: -30vh;
+    left: -30vw;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: 2;
+}

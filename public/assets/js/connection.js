@@ -154,21 +154,3 @@ registerBtn.addEventListener('click', () => {
         pswCheck2.style.border = "1px solid red";
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-window.addEventListener('click', (event) => {
-
-
-    console.log(event);
-
-
-})
