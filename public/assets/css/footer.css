@@ -2,7 +2,6 @@
 
 .footer {
     display: flex;
-    justify-content: center;
     background-color: black;
     height: 60px;
     color: white;
@@ -17,4 +16,13 @@
 
 .col a:hover {
     color: #817C7C;
+}
+
+.underName {
+    font-size: 0.8rem;
+}
+
+.col img {
+    filter: invert(100%) sepia(2%) saturate(7500%) hue-rotate(201deg) brightness(108%) contrast(101%);
+    width: 20px;
 }

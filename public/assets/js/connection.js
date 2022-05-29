@@ -3,26 +3,6 @@ const pseudoReg = /^[a-zA-Z]{1,20}[0-9]{0,3}$/;
 const pwdReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 const mailReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
-/* Fermer le menu de la navbar quand click sur un élement du menu */
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('navbarNav')
-const bsCollapse = new bootstrap.Collapse(menuToggle, {
-    toggle: false
-})
-
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => {
-        bsCollapse.toggle()
-    })
-})
-
-/* Fermer le menu de la navbar quand click en dehors (JQUERY à convertir en JS) */
-$(document).ready(function () {
-    $(document).click(function () {
-        $('.navbar-collapse').collapse('hide');
-    });
-});
-
 /* Permutation onglet Connexion / Inscription */
 const signupIn = document.querySelectorAll('.signupIn');
 signupIn.forEach(item => {
