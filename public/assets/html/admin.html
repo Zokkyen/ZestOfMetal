@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/account.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <link rel="shortcut icon" href="../img/logo/zestofmetal.png" type="image/x-icon">
     <meta name="description"
         content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
@@ -59,14 +59,18 @@
 
     <!-- Corps de la page -->
     <main>
-
         <div class="container">
-
-
-
-            
+            <fieldset class="scheduler-border">
+                <legend class="scheduler-border">Session Admin</legend>
+                <div class="control-group">
+                    <label class="control-label input-label" for="startTime">Start :</label>
+                    <div class="controls bootstrap-timepicker">
+                        <input type="text" class="datetime" type="text" id="startTime" name="startTime" placeholder="Start Time" />
+                        <i class="icon-time"></i>
+                    </div>
+                </div>
+            </fieldset>
         </div>
-
     </main>
 
     <!-- Partie Footer -->
