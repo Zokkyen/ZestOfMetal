@@ -2,6 +2,7 @@
 
 .footer {
     display: flex;
+    justify-content: center;
     background-color: black;
     height: 60px;
     color: white;
