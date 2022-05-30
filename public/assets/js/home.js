@@ -69,7 +69,6 @@ fetch('public/assets/json/news.json').then(response => {
             `;
         }
     }
-
 }).catch(err => {
     console.log("Erreur du chargement du JSON");
 });
