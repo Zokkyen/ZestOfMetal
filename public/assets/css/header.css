@@ -32,12 +32,15 @@ body {
     background-color: black;
 }
 
-.nav-item {
-    padding: 0 !important;
+.offcanvas-end {
+    width: 60% !important;
 }
 
-.nav-link:hover {
-    color: white !important;
+.canvasLink {
+    font-size: 1.2rem !important;
+    text-decoration: none !important;
+    color: white;
+    margin: 10px;
 }
 
 .logoSite {
