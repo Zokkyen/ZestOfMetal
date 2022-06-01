@@ -50,6 +50,7 @@ body {
 }
 
 .connectButton {
+    margin: 10px;
     display: inline;
     height: 2.5rem;
     width: 7rem;
