@@ -39,3 +39,16 @@ legend.scheduler-border {
 .borderInputPwd {
     border-radius: 8px;
 }
+
+.chgPwd {
+    /*margin: 5px;*/
+    display: inline;
+    height: 2.0rem;
+    width: 6rem;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: inset 0px 1px 0px rgba(63, 63, 63, 0.8), 0px 1px 3px rgba(56, 56, 56, 0.3);
+    border-color: #111;
+    /*-webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;*/
+}

@@ -80,14 +80,19 @@
             <fieldset class="scheduler-border rounded">
                 <legend class="scheduler-border">Informations personnelles</legend>
 
-                <div class="control-group">
-                    <label class="control-label input-label" for="startTime">Changer le mot de passe</label>
-                    <div class="controls bootstrap-timepicker">
-                        <input type="password" class="borderInputPwd" name="adminPwd"/>
+                <div class="control-group d-flex">
+                    <div class="me-4">
+                        <label class="control-label input-label" for="startTime">Changer le mot de passe</label>
+                        <div class="controls bootstrap-timepicker">
+                            <input type="password" class="borderInputPwd" name="adminPwd"/>
+                        </div>
+                        <label class="control-label input-label" for="startTime">Confirmer le mot de passe</label>
+                        <div class="controls bootstrap-timepicker">
+                            <input type="password" class="borderInputPwd" name="adminPwd"/>
+                        </div>                        
                     </div>
-                    <label class="control-label input-label" for="startTime">Confirmer le mot de passe</label>
-                    <div class="controls bootstrap-timepicker">
-                        <input type="password" class="borderInputPwd" name="adminPwd"/>
+                    <div class="d-flex flex-column justify-content-center pt-3">
+                        <button type="button" class="chgPwd">Confirmer</button>
                     </div>
                 </div>
             </fieldset>
