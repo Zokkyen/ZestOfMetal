@@ -3,8 +3,8 @@ let id = null;
 let counTreasure = 0;
 
 let bodySurprise = document.querySelector('body');
-bodySurprise.innerHTML += '<img id="surprise" src="/public/assets/img/surprise/ThierryMetal.png" alt="Surprise"></img>';
-bodySurprise.innerHTML += '<img id="surprise2" src="/public/assets/img/surprise/ThierryMetal.png" alt="Surprise"></img>';
+bodySurprise.innerHTML += '<img id="surprise" src="../public/assets/img/surprise/ThierryMetal.png" alt="Surprise"></img>';
+bodySurprise.innerHTML += '<img id="surprise2" src="../public/assets/img/surprise/ThierryMetal.png" alt="Surprise"></img>';
 
 function suprisAnim() {
     bodySurprise.style.overflow =  "hidden";

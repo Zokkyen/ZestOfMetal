@@ -1,29 +1,17 @@
 /*---------- Partie du Footer ----------*/
 
 .footer {
-    display: flex;
-    justify-content: center;
     background-color: black;
-    height: 60px;
-    color: white;
-    width: 100%;
+    height: 100px;
+    color: #cacaca;
 }
 
-.col a {
-    color: white;
+.col-6 a {
+    color: #cacaca;
     text-decoration: none;
-    white-space: nowrap;
 }
 
-.col a:hover {
-    color: #817C7C;
-}
-
-.underName {
-    font-size: 0.8rem;
-}
-
-.col img {
-    filter: invert(100%) sepia(2%) saturate(7500%) hue-rotate(201deg) brightness(108%) contrast(101%);
-    width: 20px;
+.col-6 img {
+    filter: invert(74%) sepia(14%) saturate(0%) hue-rotate(67deg) brightness(103%) contrast(103%);
+    width: 2em;
 }

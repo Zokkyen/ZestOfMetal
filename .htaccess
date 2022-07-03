@@ -1,0 +1,12 @@
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+RewriteRule "accueil.html" "controller/homeCtrl.php" 
+RewriteRule "connexion.html" "controller/formCtrl.php" 

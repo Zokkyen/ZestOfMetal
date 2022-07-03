@@ -1,71 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr-FR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/surprise.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/connection.css">
-    <link rel="shortcut icon" href="../img/logo/zestofmetal.png" type="image/x-icon">
-    <meta name="description"
-        content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
-    <title>Zest Of Metal</title>
-</head>
-
-<body>
-    <!-- Partie Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
-            <div class="container-fluid">
-
-                <a href="../../../index.html">
-                    <img class="logoSite" src="../img/logo/zestofmetal.png" alt="Logo du site">
-                </a>
-                <h1 class="m-0">Le site d'Actus Metal qui envoi du poney</h1>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="offcanvas offcanvas-end  bg-dark" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body text-end text-white">
-                        <div class="d-flex flex-column align-items-end">
-                            <a class="canvasLink" href="news.html">Actualités</a>
-                            <a class="canvasLink" href="encyclopedia.html">Encyclopédie</a>
-                            <a class="canvasLink" href="concerts.html">Concerts</a>
-                            <a class="canvasLink" href="forum.html">Forum</a>
-                            <button type="button" class="connectButton">
-                                <a href="connection.html">Connexion</a>
-                            </button>
-                            <div class="mt-2 mb-3 accountDisp">
-                                <span class="text-white me-1">Mon compte</span>
-                                <img class="sizeAccountLogo ms-1" src="../img/ICO/accountwhite.png" alt="Account Logo"></img>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </header>
 
     <!-- Corps de la page -->
     <main>
         <!-- Formulaire d'inscription / connexion -->
-        <div class="container">
+        <div class="container-form">
             <div class="frame">
-                <div class="nav">
+                <div class="nav-form">
                     <ul class="links">
                         <li class="signin-active">
                             <a class="signupIn">Connexion</a>
@@ -198,55 +137,4 @@
                 </div>
             </div>
         </div>
-
     </main>
-
-    <!-- Partie Footer -->
-    <footer>
-        <div class="container-fluid footer">
-            <div class="row align-items-center">
-                <div class="col text-center">
-                    <span>&#169;Zokkyen</span>
-                </div>
-                <div class="col text-center">
-                    <a href="help.html">Aide</a>
-                </div>
-                <div class="col text-center">
-                    <a href="cgu.html">CGU</a>
-                </div>
-                <div class="col text-center">
-                    <div class="row flex-nowrap">
-                        <div class="col-3 text-center">
-                            <a href="https://www.facebook.com/zestofmetal" target="_blank">
-                                <img src="../img/ICO/facebook.svg" alt="facebook">
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="https://www.instagram.com/zestofmetal" target="_blank">
-                                <img src="../img/ICO/instagram.svg" alt="instagram">
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="https://twitter.com/zestofmetal" target="_blank">
-                                <img src="../img/ICO/twitter.svg" alt="twitter">
-                            </a>
-                        </div>
-                        <div class="col-3 text-center">
-                            <a href="mailto:zestofmetal@contact.fr" target="_blank">
-                                <img src="../img/ICO/mail.svg" alt="mail">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Partie des ajouts de scripts personnels -->
-    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../js/common.js"></script>
-    <script src="../js/surprise.js"></script>
-    <script src="../js/connection.js"></script>
-</body>
-
-</html>

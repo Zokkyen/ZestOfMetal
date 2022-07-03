@@ -1,0 +1,120 @@
+/*---------- Partie du Main ----------*/
+
+/* Message d'accueil */
+
+.homePage {
+    width: 100vw;
+    height: calc(100vh - 3.4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: url("../img/wallpaper/mobile.webp");
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+}
+
+.welcomeFirst {
+    height: 12vh;
+    opacity: 0.8;
+    clip-path: polygon(0% 10px, 10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.welcomeFirst p {
+    color: #cacaca;
+    margin-bottom: 0;
+    
+    font-size: calc(0.8rem + 0.5vw);
+    padding: 10px;
+}
+
+.blank {
+    height: 20vh;
+}
+
+.welcomeLast {
+    height: 12vh;
+    opacity: 0.8;
+    clip-path: polygon(0% 10px, 10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.welcomeLast p {
+    color: #cacaca;
+    margin-bottom: 0;
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+.welcomeLast img {
+    width: 1.5em;
+    filter: invert(74%) sepia(14%) saturate(0%) hue-rotate(67deg) brightness(103%) contrast(103%);
+}
+
+/* Format des actualités page d'accueil */
+
+.myArticle_body {
+    width: 80vw;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    background: rgb(0, 0, 0, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    clip-path: polygon(0% 10px, 10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px));
+}
+
+.myArticle_top {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+}
+
+.myArticle_albumImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    z-index: 1;
+}
+
+.band_information {
+    position: absolute;
+    z-index: 2;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.band_information p {
+    color: white;
+    margin: 0;
+    margin-left: 5px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.myArticle_bottom {
+    height: 45%;
+    width: 100%;
+    padding: 10px;
+}
+
+.myArticle_bottom h3 {
+    font-family: "metalFont", serif;
+    font-size: 1.5rem;
+    color: #cacaca;
+}
+
+.myArticle_bottom p {
+    margin-bottom: 10px;
+    color: #cacaca;
+}
+
+.myArticle_bottom a {
+    text-decoration: none;
+    color: #cacaca;
+    font-weight: bold;
+    margin: 0;
+}

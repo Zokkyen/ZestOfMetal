@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr-FR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/surprise.css">
-    <link rel="stylesheet" href="../css/help.css">
+    <link rel="stylesheet" href="../css/encyclopedia.css">
     <link rel="shortcut icon" href="../img/logo/zestofmetal.png" type="image/x-icon">
     <meta name="description"
         content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
@@ -22,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
             <div class="container-fluid">
 
-                <a href="../../../index.html">
+                <a href="../../../index.php">
                     <img class="logoSite" src="../img/logo/zestofmetal.png" alt="Logo du site">
                 </a>
                 <h1 class="m-0">Le site d'Actus Metal qui envoi du poney</h1>
@@ -42,12 +40,12 @@
                     </div>
                     <div class="offcanvas-body text-end text-white">
                         <div class="d-flex flex-column align-items-end">
-                            <a class="canvasLink" href="news.html">Actualités</a>
-                            <a class="canvasLink" href="encyclopedia.html">Encyclopédie</a>
-                            <a class="canvasLink" href="concerts.html">Concerts</a>
-                            <a class="canvasLink" href="forum.html">Forum</a>
+                            <a class="canvasLink" href="news.php">Actualités</a>
+                            <a class="canvasLink" href="encyclopedia.php">Encyclopédie</a>
+                            <a class="canvasLink" href="concerts.php">Concerts</a>
+                            <a class="canvasLink" href="forum.php">Forum</a>
                             <button type="button" class="connectButton">
-                                <a href="connection.html">Connexion</a>
+                                <a href="connection.php">Connexion</a>
                             </button>
                         </div>
                     </div>
@@ -72,10 +70,10 @@
                     <span>&#169;Zokkyen</span>
                 </div>
                 <div class="col text-center">
-                    <a href="help.html">Aide</a>
+                    <a href="help.php">Aide</a>
                 </div>
                 <div class="col text-center">
-                    <a href="cgu.html">CGU</a>
+                    <a href="cgu.php">CGU</a>
                 </div>
                 <div class="col text-center">
                     <div class="row flex-nowrap">

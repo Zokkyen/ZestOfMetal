@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="public/assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="public/assets/css/header.css">
-    <link rel="stylesheet" href="public/assets/css/footer.css">
-    <link rel="stylesheet" href="public/assets/css/style.css">
-    <link rel="shortcut icon" href="public/assets/img/logo/zestofmetal.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/surprise.css">
+    <link rel="stylesheet" href="../css/help.css">
+    <link rel="shortcut icon" href="../img/logo/zestofmetal.png" type="image/x-icon">
     <meta name="description"
         content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>
@@ -20,8 +22,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0">
             <div class="container-fluid">
 
-                <a href="#">
-                    <img class="logoSite" src="public/assets/img/logo/zestofmetal.png" alt="Logo du site">
+                <a href="../../../index.php">
+                    <img class="logoSite" src="../img/logo/zestofmetal.png" alt="Logo du site">
                 </a>
                 <h1 class="m-0">Le site d'Actus Metal qui envoi du poney</h1>
 
@@ -40,12 +42,12 @@
                     </div>
                     <div class="offcanvas-body text-end text-white">
                         <div class="d-flex flex-column align-items-end">
-                            <a class="canvasLink" href="public/assets/html/news.html">Actualités</a>
-                            <a class="canvasLink" href="public/assets/html/encyclopedia.html">Encyclopédie</a>
-                            <a class="canvasLink" href="public/assets/html/concerts.html">Concerts</a>
-                            <a class="canvasLink" href="public/assets/html/forum.html">Forum</a>
+                            <a class="canvasLink" href="news.php">Actualités</a>
+                            <a class="canvasLink" href="encyclopedia.php">Encyclopédie</a>
+                            <a class="canvasLink" href="concerts.php">Concerts</a>
+                            <a class="canvasLink" href="forum.php">Forum</a>
                             <button type="button" class="connectButton">
-                                <a href="public/assets/html/connection.html">Connexion</a>
+                                <a href="connection.php">Connexion</a>
                             </button>
                         </div>
                     </div>
@@ -56,7 +58,10 @@
 
     <!-- Corps de la page -->
     <main>
-        <div class="container-fluid bodyContainer"></div>
+
+        <div class="container">
+        </div>
+
     </main>
 
     <!-- Partie Footer -->
@@ -67,31 +72,31 @@
                     <span>&#169;Zokkyen</span>
                 </div>
                 <div class="col text-center">
-                    <a href="public/assets/html/help.html">Aide</a>
+                    <a href="help.php">Aide</a>
                 </div>
                 <div class="col text-center">
-                    <a href="public/assets/html/cgu.html">CGU</a>
+                    <a href="cgu.php">CGU</a>
                 </div>
                 <div class="col text-center">
                     <div class="row flex-nowrap">
                         <div class="col-3 text-center">
                             <a href="https://www.facebook.com/zestofmetal" target="_blank">
-                                <img src="public/assets/img/ICO/facebook.svg" alt="facebook">
+                                <img src="../img/ICO/facebook.svg" alt="facebook">
                             </a>
                         </div>
                         <div class="col-3 text-center">
                             <a href="https://www.instagram.com/zestofmetal" target="_blank">
-                                <img src="public/assets/img/ICO/instagram.svg" alt="instagram">
+                                <img src="../img/ICO/instagram.svg" alt="instagram">
                             </a>
                         </div>
                         <div class="col-3 text-center">
                             <a href="https://twitter.com/zestofmetal" target="_blank">
-                                <img src="public/assets/img/ICO/twitter.svg" alt="twitter">
+                                <img src="../img/ICO/twitter.svg" alt="twitter">
                             </a>
                         </div>
                         <div class="col-3 text-center">
                             <a href="mailto:zestofmetal@contact.fr" target="_blank">
-                                <img src="public/assets/img/ICO/mail.svg" alt="mail">
+                                <img src="../img/ICO/mail.svg" alt="mail">
                             </a>
                         </div>
                     </div>
@@ -101,9 +106,9 @@
     </footer>
 
     <!-- Partie des ajouts de scripts personnels -->
-    <script src="public/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="public/assets/js/common.js"></script>
-    <script src="public/assets/js/home.js"></script>
+    <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/surprise.js"></script>
 </body>
 
 </html>
