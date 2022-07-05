@@ -7,7 +7,7 @@
 
             <!-- Premier texte d'affichage sur la page home -->
             <div class="row justify-content-center">
-                <div class="col-10 welcomeFirst text-center p-1 bg-black">
+                <div class="col-10 welcomeFirst text-center p-1">
                     <div class="w-100 h-100 d-flex justify-content-center align-items-center">
                         <p>Retrouvez sur votre site préférée, toutes les dernières informations sur l'actualités Metal, sorties, concerts et plus encore.</p>
                     </div>
@@ -19,12 +19,12 @@
 
             <!-- Second texte d'affichage sur la page home -->
             <div class="row justify-content-center">
-                <div class="col-10 welcomeLast text-center p-1 bg-black">
+                <div class="col-10 welcomeLast text-center p-1">
                     <div class="w-100 h-50 d-flex justify-content-center align-items-center">
                         <p class="w-100 text-center">Scrollez vers le bas dès à présent pour découvrir les dernières actus du jour !</p>
                     </div>
 
-                    <div class="w-100 h-50 d-flex justify-content-center align-items-center">
+                    <div class="w-100 h-50 d-flex justify-content-center align-items-center mt-4">
                         <img src="../public/assets/img/ICO/down-arrow.png" alt="Down Arrow">
                     </div>
                 </div>

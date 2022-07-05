@@ -10,23 +10,13 @@
 .frame {
     height: 100%;
     width: 90%;
-    background-color: black;
     margin-left: auto;
     margin-right: auto;
-    border-top: solid 1px rgba(255, 255, 255, .5);
     border-radius: 5px;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.514);
     overflow: hidden;
     transition: all .5s ease;
-}
-
-.frame-long {
-    height: 100%;
-}
-
-.frame-short {
-    height: 100%;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1);
+    background: #CACACA;
 }
 
 .nav-form {
@@ -40,11 +30,6 @@
 .formContainer {
     height: calc(90% - 80px);
     width: 100%;
-}
-
-.nav-up {
-    transform: translateY(-100px);
-    opacity: 0;
 }
 
 .links {
@@ -66,7 +51,7 @@
 
 .signin-active a {
     padding-bottom: 10px;
-    color: #ffffff;
+    color: black;
     text-decoration: none;
     border-bottom: solid 2px #838383;
     transition: all .25s ease;
@@ -75,7 +60,7 @@
 
 .signin-inactive a {
     padding-bottom: 0;
-    color: rgba(255, 255, 255, .3);
+    color: #9b9b9b;
     text-decoration: none;
     border-bottom: none;
     cursor: pointer;
@@ -83,7 +68,7 @@
 
 .signup-active a {
     cursor: pointer;
-    color: #ffffff !important;
+    color: black !important;
     text-decoration: none;
     border-bottom: solid 1px #838383;
     padding-bottom: 10px;
@@ -91,7 +76,7 @@
 
 .signup-inactive a {
     cursor: pointer;
-    color: rgba(255, 255, 255, .3);
+    color: #9b9b9b;
     text-decoration: none;
     transition: all .25s ease;
 }
@@ -125,28 +110,20 @@
     transition: all .5s ease;
 }
 
-
 @media screen and (min-width: 756px) {
     .frame {
         height: 600px;
         width: 420px;
     }
-
-    .frame-long {
-        height: 615px;
-    }
-
     .form-signin {
         width: 430px;
         height: 375px;
     }
-
     .form-signup {
         width: 430px;
         height: 375px;
     }
 }
-
 
 .form-signup-left {
     transform: translateX(-399px);
@@ -158,50 +135,9 @@
     opacity: 0;
 }
 
-.success {
-    width: 80%;
-    height: 150px;
-    text-align: center;
-    position: relative;
-    top: -890px;
-    left: 450px;
-    opacity: .0;
-    transition: all .8s .4s ease;
-}
-
-.success-left {
-    transform: translateX(-406px);
-    opacity: 1;
-}
-
-.successtext {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 300;
-    margin-top: -35px;
-    padding-left: 37px;
-    padding-right: 37px;
-}
-
-#check path {
-    stroke: #ffffff;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: .85px;
-    stroke-dasharray: 60px 300px;
-    stroke-dashoffset: -166px;
-    fill: rgba(255, 255, 255, .0);
-    transition: stroke-dashoffset 2s ease .5s, fill 1.5s ease 1.0s;
-}
-
-#check.checked path {
-    stroke-dashoffset: 33px;
-    fill: rgba(255, 255, 255, .03);
-}
-
 .form-signin input,
 .form-signup input {
-    color: #ffffff;
+    color: black;
     font-size: 13px;
 }
 
@@ -212,7 +148,6 @@
     font-size: 0.9rem !important;
     border: none;
     border-radius: 20px;
-    margin-bottom: 20px;
     background: rgba(255, 255, 255, .2);
 }
 
@@ -222,7 +157,7 @@ label {
     font-size: 13px;
     padding-left: 15px;
     padding-bottom: 10px;
-    color: rgba(255, 255, 255, .7);
+    color: #5a5a5a;
     display: block;
 }
 
@@ -244,8 +179,10 @@ textarea:focus {
     height: 35px;
     border-radius: 20px;
     margin-top: 20px;
-    background-color: rgb(155, 155, 155);
+    background-color: #5a5a5a;
+    color: #CACACA;
     cursor: pointer;
+    border: 0 !important;
 }
 
 .btn-signin {
@@ -256,8 +193,14 @@ textarea:focus {
     height: 35px;
     border-radius: 20px;
     margin-top: 23px;
-    background-color: rgb(155, 155, 155);
+    background-color: #5a5a5a;
+    color: #CACACA;
     cursor: pointer;
+    border: 0 !important;
+}
+
+#userInputModal {
+    margin-bottom: 20px;
 }
 
 .forgot {
@@ -266,8 +209,8 @@ textarea:focus {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border-top: solid 1px rgba(255, 255, 255, 0.623);
-    color: rgba(255, 255, 255, 0.623);
+    border-top: solid 1px #5a5a5a;
+    color: #5a5a5a;
     font-size: 14px;
     transition: all 0.5s ease;
     text-decoration: none;
@@ -304,37 +247,21 @@ textarea:focus {
     background: rgba(255, 255, 255, .2);
 }
 
-#mailRegistModal~span {
-    position: absolute;
-    color: red;
-    font-size: 0.7rem;
-    top: 67px;
-    left: 15px;
-}
-
-
-#pswInputModal~span, #pswCheck1~span, #pswCheck2~span {
-    position: absolute;
-    color: red;
-    font-size: 0.7rem;
-    top: 38px;
-    left: 15px;
-}
-
 input:focus {
     outline: none !important;
     border: none;
 }
 
-.input-icon-container .fa-solid {
+.input-icon-container .fa-regular {
     position: absolute;
-    top: 8px;
+    top: 10px;
     right: 10px;
+    font-size: 17px;
 }
 
-.fa-solid {
-    font-size: 18px;
-    color: rgba(255, 255, 255, .7);
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
 }
 
 /* Partie de la modal, retrouvez votre mot de passe */
@@ -369,4 +296,12 @@ input:focus {
     text-align: center;
     width: 80px;
     height: 80px;
+}
+
+/* Error messages */
+
+.error {
+    color: red;
+    padding-left: 5px;
+    font-size: 0.9rem;
 }

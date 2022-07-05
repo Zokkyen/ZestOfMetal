@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../public/assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../public/assets/css/surprise.css"> 
     <link rel="stylesheet" href="../public/assets/css/header.css">
     <link rel="stylesheet" href="../public/assets/css/footer.css">
-    <link rel="stylesheet" href="../public/assets/css/home-mobile.css">
+    <link rel="stylesheet" href="../public/assets/css/home.css">
     <link rel="stylesheet" href="../public/assets/css/form.css">
     <meta name="description" content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>

@@ -1,7 +1,7 @@
 
     <!-- Corps de la page -->
     <main>
-        <!-- Formulaire d'inscription / connexion -->
+        <!-- Formulaire d'inscription / connection -->
         <div class="container-form">
             <div class="frame">
                 <div class="nav-form">
@@ -15,46 +15,49 @@
                     </ul>
                 </div>
                 <div class="formContainer">
-                    <form class="form-signin" action="" method="post" name="form">
+
+                    <!-- Formulaire de connection -->
+                    <form class="form-signin" method="POST" name="formSignin" novalidate>
 
                         <label for="username">Pseudo</label>
-                        <input id="userInputModal" class="form-styling" type="text" name="username" placeholder="" required/>
+                        <input id="userInputModal" class="form-styling" type="text" name="logSignin" placeholder="" required/>
 
                         <label for="password">Mot de passe</label>
-                        <div class="input-icon-container">
-                            <input id="pswInputModal" type="password" name="passwordUser" placeholder="" required/>
-                            <i class="fa-solid fa-eye-slash"></i>
-                            <span></span>
+                        <div class="input-icon-container m-0">
+                            <input id="pswInputModal" class="form-styling" type="password" name="pswSignin" placeholder="" required/>
+                            <i class="fa-regular fa-eye-slash"></i>
                         </div>
 
-                        <button id="connectBtn" type="button" class="btn-signin">SE CONNECTER</button>
+                        <button id="connectBtn" type="submit" value="signin" class="btn-signin">SE CONNECTER</button>
                     </form>
-                    <form class="form-signup" action="" method="post" name="form">
+
+                    <!-- Formulaire d'inscription -->
+                    <form class="form-signup" method="POST" name="formSignup" novalidate>
 
                         <label for="username">Pseudo</label>
-                        <input id="userRegistModal" class="form-styling" type="text" name="username" placeholder="" required/>
+                        <input id="userRegistModal" class="form-styling" type="text" name="logSignup" placeholder="" value="<?=($pseudo??'')?>" required/>
+                        <p class="error"><?=$errorArray['logSignup']??''?></p>
 
                         <div class="input-icon-container">
                             <label for="email">Email</label>
-                            <input id="mailRegistModal" class="form-styling m-0" type="email" name="email" placeholder="" required/>
-                            <span></span>
+                            <input id="mailRegistModal" class="form-styling m-0" type="email" name="mailSignup" placeholder="" value="<?=($email??'')?>" required/>
+                            <p class="error"><?=$errorArray['mailSignup']??''?></p>
                         </div>
 
                         <label for="password">Mot de passe</label>
                         <div class="input-icon-container">
-                            <input id="pswCheck1" type="password" name="passwordUser" placeholder="" required/>
-                            <i class="fa-solid fa-eye-slash"></i>
-                            <span></span>
+                            <input id="pswCheck1" type="password" name="pswSignup1" placeholder="" required/>
+                            <i class="fa-regular fa-eye-slash"></i>
                         </div>
 
                         <label for="password">Confirmation du Mot de passe</label>
                         <div class="input-icon-container">
-                            <input id="pswCheck2" type="password" name="passwordUser" placeholder="" required/>
-                            <i class="fa-solid fa-eye-slash"></i>
-                            <span></span>
+                            <input id="pswCheck2" type="password" name="pswSignup2" placeholder="" required/>
+                            <i class="fa-regular fa-eye-slash"></i>
+                            <p class="error"><?=$errorArray['pswSignup']??''?></p>
                         </div>
 
-                        <button id="registerBtn" type="button" class="btn-signup">S'ENREGISTRER</button>
+                        <button id="registerBtn" type="submit" value="signup" class="btn-signup">S'ENREGISTRER</button>
                     </form>
                 </div>
                 <div class="forgot">

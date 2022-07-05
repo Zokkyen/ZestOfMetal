@@ -10,3 +10,5 @@ Options +FollowSymlinks
 
 RewriteRule "accueil.html" "controller/homeCtrl.php" 
 RewriteRule "connexion.html" "controller/formCtrl.php" 
+RewriteRule "account.html" "controller/accountCtrl.php" 
+RewriteRule "admin.html" "controller/adminCtrl.php" 
