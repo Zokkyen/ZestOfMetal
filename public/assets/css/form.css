@@ -5,11 +5,14 @@
     height: calc(100vh - 3.5rem - 100px);
     padding-top: 5%;
     padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .frame {
-    height: 100%;
-    width: 90%;
+    height: 480px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
@@ -50,7 +53,8 @@
 }
 
 .signin-active a {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
     color: black;
     text-decoration: none;
     border-bottom: solid 2px #838383;
@@ -60,6 +64,7 @@
 
 .signin-inactive a {
     padding-bottom: 0;
+    font-size: 1.0rem;
     color: #9b9b9b;
     text-decoration: none;
     border-bottom: none;
@@ -67,18 +72,20 @@
 }
 
 .signup-active a {
-    cursor: pointer;
+    padding-bottom: 5px;
+    font-size: 1.2rem !important;
     color: black !important;
     text-decoration: none;
     border-bottom: solid 1px #838383;
-    padding-bottom: 10px;
+    cursor: pointer;
 }
 
 .signup-inactive a {
-    cursor: pointer;
+    font-size: 1.0rem;
     color: #9b9b9b;
     text-decoration: none;
     transition: all .25s ease;
+    cursor: pointer;
 }
 
 .form-signin {
@@ -141,6 +148,28 @@
     font-size: 13px;
 }
 
+.btn-signin {
+    margin-top: 40px;
+}
+
+.btn-signup {
+    margin-top: 15px;
+}
+
+input[type=submit] {
+    font-size: 15px;
+    color: #CACACA;
+    background-color: #5a5a5a;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    border: 0 !important;
+}
+
 .form-styling {
     width: 100%;
     height: 35px;
@@ -169,34 +198,6 @@ textarea:focus {
     border: none;
     padding-right: 40px;
     transition: background .5s ease;
-}
-
-.btn-signup {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    height: 35px;
-    border-radius: 20px;
-    margin-top: 20px;
-    background-color: #5a5a5a;
-    color: #CACACA;
-    cursor: pointer;
-    border: 0 !important;
-}
-
-.btn-signin {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    height: 35px;
-    border-radius: 20px;
-    margin-top: 23px;
-    background-color: #5a5a5a;
-    color: #CACACA;
-    cursor: pointer;
-    border: 0 !important;
 }
 
 #userInputModal {
@@ -268,7 +269,7 @@ input::-ms-clear {
 
 .modal-content {
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(155, 155, 155) !important;
@@ -276,6 +277,7 @@ input::-ms-clear {
 
 .modal-title {
     font-size: 1.2rem;
+    padding: 5px;
 }
 
 .modal.show {

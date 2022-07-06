@@ -20,44 +20,46 @@
                     <form class="form-signin" method="POST" name="formSignin" novalidate>
 
                         <label for="username">Pseudo</label>
-                        <input id="userInputModal" class="form-styling" type="text" name="logSignin" placeholder="" required/>
+                        <input id="userInputModal" class="form-styling" type="text" name="logSignin" value="<?=($logSignin??'')?>" required/>
+                        <p class="error"><?=$errorSignin['logSignin']??''?></p>
 
                         <label for="password">Mot de passe</label>
                         <div class="input-icon-container m-0">
-                            <input id="pswInputModal" class="form-styling" type="password" name="pswSignin" placeholder="" required/>
+                            <input id="pswInputModal" class="form-styling" type="password" name="pswSignin" value="<?=($pswSignin??'')?>" required/>
                             <i class="fa-regular fa-eye-slash"></i>
+                            <p class="error"><?=$errorSignin['pswSignin']??''?></p>
                         </div>
 
-                        <button id="connectBtn" type="submit" value="signin" class="btn-signin">SE CONNECTER</button>
+                        <input type="submit" name="sendForm" value="SE CONNECTER" class="btn-signin"></input>
                     </form>
 
                     <!-- Formulaire d'inscription -->
                     <form class="form-signup" method="POST" name="formSignup" novalidate>
 
                         <label for="username">Pseudo</label>
-                        <input id="userRegistModal" class="form-styling" type="text" name="logSignup" placeholder="" value="<?=($pseudo??'')?>" required/>
-                        <p class="error"><?=$errorArray['logSignup']??''?></p>
+                        <input id="userRegistModal" class="form-styling" type="text" name="logSignup" value="<?=($logSignup??'')?>" required/>
+                        <p class="error"><?=$errorSignup['logSignup']??''?></p>
 
                         <div class="input-icon-container">
                             <label for="email">Email</label>
-                            <input id="mailRegistModal" class="form-styling m-0" type="email" name="mailSignup" placeholder="" value="<?=($email??'')?>" required/>
-                            <p class="error"><?=$errorArray['mailSignup']??''?></p>
+                            <input id="mailRegistModal" class="form-styling m-0" type="email" name="mailSignup" value="<?=($mailSignup??'')?>" required/>
+                            <p class="error"><?=$errorSignup['mailSignup']??''?></p>
                         </div>
 
                         <label for="password">Mot de passe</label>
                         <div class="input-icon-container">
-                            <input id="pswCheck1" type="password" name="pswSignup1" placeholder="" required/>
+                            <input id="pswCheck1" type="password" name="pswSignup1" value="<?=($pswSignin1??'')?>" required/>
                             <i class="fa-regular fa-eye-slash"></i>
                         </div>
 
                         <label for="password">Confirmation du Mot de passe</label>
                         <div class="input-icon-container">
-                            <input id="pswCheck2" type="password" name="pswSignup2" placeholder="" required/>
+                            <input id="pswCheck2" type="password" name="pswSignup2" value="<?=($pswSignin2??'')?>" required/>
                             <i class="fa-regular fa-eye-slash"></i>
-                            <p class="error"><?=$errorArray['pswSignup']??''?></p>
+                            <p class="error"><?=$errorSignup['pswSignup']??''?></p>
                         </div>
 
-                        <button id="registerBtn" type="submit" value="signup" class="btn-signup">S'ENREGISTRER</button>
+                        <input type="submit" name="sendForm" value="S'ENREGISTRER" class="btn-signup"></input>
                     </form>
                 </div>
                 <div class="forgot">
@@ -114,7 +116,7 @@
                     </div>
                     <div class="modal-body">
                         <input class="pswInputModal" type="email" name="email" placeholder="Adresse mail" required
-                        pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+                        pattern="<?=REGEX_EMAIL?>" />
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-bs-target="#validModal"
@@ -132,7 +134,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img class="validConfirm" src="../img/ICO/valid.png" alt="Logo de validation">
+                        <img class="validConfirm" src="../public/assets/img/ICO/valid.png" alt="Logo de validation">
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Fermer</button>

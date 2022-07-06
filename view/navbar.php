@@ -93,10 +93,34 @@
                                 </div>
                             </div>
 
-                            <!-- Bouton de connexion au compte -->
-                            <button type="button" class="connectButton p-1">
-                                <a href="../connexion.html">Connexion</a>
-                            </button>
+                            <!-- Change display of button or session if connexion is active -->
+                            <?php
+                                if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                                    
+                                    
+                                    echo "
+                                        <div class='d-flex align-items-center position-relative mt-4'>
+                                            <span class='usernameText'>" . htmlspecialchars($_SESSION['username']) . "</span>
+                                            <a class='text-decoration-none stretched-link' href='../admin.html'>
+                                                <img class='loginPicture' src='../public/assets/img/ico/account.svg' alt='Login Picture'>
+                                            </a>
+                                        </div>
+                                    ";
+                                
+                                
+                                } else {
+                                    
+                                    // Bouton de connexion au compte
+                                    echo "
+                                        <button type='button' class='connectButton p-1'>
+                                            <a href='../connexion.html'>Connexion</a>
+                                        </button>
+                                    ";
+                                }
+                            ?>
+
+
+
                         </div>
                     </div>
                 </div>

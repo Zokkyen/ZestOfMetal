@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../public/assets/css/surprise.css"> 
     <link rel="stylesheet" href="../public/assets/css/header.css">
     <link rel="stylesheet" href="../public/assets/css/footer.css">
-    <link rel="stylesheet" href="../public/assets/css/home.css">
-    <link rel="stylesheet" href="../public/assets/css/form.css">
+    <?=$cssSpecific?>
     <meta name="description" content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>
     <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/logo/zestofmetal.ico" />

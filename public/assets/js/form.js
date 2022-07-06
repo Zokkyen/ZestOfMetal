@@ -14,10 +14,8 @@ signupIn.forEach(item => {
 let pswIcon = document.querySelectorAll('.fa-regular');
 pswIcon.forEach(element => {
     element.addEventListener('click', () => {
-        console.log(element.classList[1])
         element.classList.toggle('fa-eye-slash');
         element.classList.toggle('fa-eye');
-
         if(element.classList.contains("fa-eye")) {
             element.parentNode.children[0].type = "text";
         }
