@@ -6,9 +6,9 @@
 
                 <!-- Affichage du logo et nom du site -->
                 <a href="../accueil.html" class="d-flex align-items-center text-decoration-none">
-                    <img class="logoSite" src="../public/assets/img/logo/zestofmetal.ico" alt="Zest Of Metal">
-                    <h1 class="m-0 fs-4 ms-2 text-nowrap">Zest Of Metal</h1>
+                    <img class="logoSite" src="../public/assets/img/logo/zestofmetal.png" alt="Zest Of Metal">
                 </a>
+                <h1 class="m-0 fs-4 ms-2 text-nowrap">Zest Of Metal</h1>
 
                 <!-- Bouton pour le offcanvas -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,11 +27,11 @@
                             <!-- Actualités -->
                             <div class="accordion accordion-flush w-100" id="accordionFlushExample">
                                 <div class="accordion-item p-1">
-                                    <h2 class="accordion-header" id="flush-headingOne">
+                                    <p class="accordion-header" id="flush-headingOne">
                                         <button class="w-100 text-end border-0 fs-5 fw-bold bg-transparent" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"  aria-controls="flush-collapseOne">
                                             Actualités
                                         </button>
-                                    </h2>
+                                    </p>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body d-flex flex-column">
                                             <a class="canvasLink" href="../public/assets/php/news?time=day.php">Du jour</a>
@@ -44,11 +44,11 @@
 
                                 <!-- Encyclopédie -->
                                 <div class="accordion-item p-1">
-                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                    <p class="accordion-header" id="flush-headingTwo">
                                         <button class="w-100 text-end border-0 fs-5 fw-bold bg-transparent" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"  aria-controls="flush-collapseTwo">
                                             Encyclopédie
                                         </button>
-                                    </h2>
+                                    </p>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body d-flex flex-column">
                                             <a class="canvasLink" href="../public/assets/php/encyclopedia?filter=band.php">Par artiste</a>
@@ -62,11 +62,11 @@
 
                                 <!-- Concerts -->
                                 <div class="accordion-item p-1">
-                                    <h2 class="accordion-header" id="flush-headingThree">
+                                    <p class="accordion-header" id="flush-headingThree">
                                         <button class="w-100 text-end border-0 fs-5 fw-bold bg-transparent" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"  aria-controls="flush-collapseThree">
                                             Concerts
                                         </button>    
-                                    </h2>
+                                    </p>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             <a class="canvasLink" href="../public/assets/php/concerts.php">Liste des programmations</a>
@@ -76,11 +76,11 @@
 
                                 <!-- Forum -->
                                 <div class="accordion-item p-1">
-                                    <h2 class="accordion-header" id="flush-headingFour">
+                                    <p class="accordion-header" id="flush-headingFour">
                                         <button class="w-100 text-end border-0 fs-5 fw-bold bg-transparent" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"  aria-controls="flush-collapseFour">
                                             Forum
                                         </button>  
-                                    </h2>
+                                    </p>
                                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body d-flex flex-column">
                                             <a class="canvasLink" href="public/assets/php/forum?type=general.php">Forum généraux</a>

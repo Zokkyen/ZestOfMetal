@@ -12,7 +12,7 @@
     <?=$cssSpecific?>
     <meta name="description" content="Le site d'Actus Metal pour vos groupes préférés avec accès fiches des groupes, concerts et forum.">
     <title>Zest Of Metal</title>
-    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/logo/zestofmetal.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/logo/zestofmetal.png" />
     <meta name="robots" content="index, nofollow" />
 </head>
 

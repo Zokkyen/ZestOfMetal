@@ -1,37 +1,47 @@
-
 <!-- Corps de la page -->
 <main>
 
     <!-- Message d'accueil -->
     <div class="container-fluid homePage">
 
-        <!-- Premier texte d'affichage sur la page home -->
-        <div class="row justify-content-center">
-            <div class="col-10 welcomeFirst text-center p-1">
-                <div class="w-100 h-100 d-flex justify-content-center align-items-center">
-                    <p>Retrouvez sur votre site préférée, toutes les dernières informations sur l'actualités Metal, sorties, concerts et plus encore.</p>
+        <!-- Page d'accueil avec carousel et textes d'accroches -->
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../public/assets/img/wallpaper/mobile1.webp" class="" alt="Wallpaper 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/assets/img/wallpaper/mobile2.webp" class="" alt="Wallpaper 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/assets/img/wallpaper/mobile3.webp" class="" alt="Wallpaper 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="../public/assets/img/wallpaper/mobile4.webp" class="" alt="Wallpaper 4">
                 </div>
             </div>
         </div>
 
-        <!-- Container vide pour optimiser l'affichage -->
-        <div class="blank"></div>
+        <!-- Premier texte d'affichage sur la page home -->
+        <div class="welcomeFirst text-center p-1">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                <p>Retrouvez sur votre site préférée, toutes les dernières informations sur l'actualités Metal, sorties, concerts et plus encore.</p>
+            </div>
+        </div>
 
         <!-- Second texte d'affichage sur la page home -->
-        <div class="row justify-content-center">
-            <div class="col-10 welcomeLast text-center p-1">
-                <div class="w-100 h-50 d-flex justify-content-center align-items-center">
-                    <p class="w-100 text-center">Scrollez vers le bas dès à présent pour découvrir les dernières actus du jour !</p>
-                </div>
+        <div class="welcomeLast text-center p-1">
+            <div class="w-100 h-50 d-flex justify-content-center align-items-center">
+                <p class="w-100 text-center">Scrollez vers le bas dès à présent pour découvrir les dernières actus du jour !</p>
+            </div>
 
-                <div class="w-100 h-50 d-flex justify-content-center align-items-center mt-4">
-                    <img src="../public/assets/img/ICO/down-arrow.png" alt="Down Arrow">
-                </div>
+            <div class="w-100 h-50 d-flex justify-content-center align-items-center mt-4">
+                <img src="../public/assets/img/ICO/down-arrow.png" alt="Down Arrow">
             </div>
         </div>
     </div>
 
-    <!-- Titre des actualités récentes -->   
+    <!-- Titre des actualités récentes -->
     <div class="d-flex justify-content-center h-25">
         <h2>Article récent</h2>
     </div>
