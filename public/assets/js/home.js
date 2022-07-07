@@ -1,4 +1,4 @@
-/* Variable du chargement du JSON si ok */
+/* Tableau des articles pour l'animation une fois le JSON chargé */
 
 let scrollElements;
 
