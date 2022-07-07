@@ -31,6 +31,11 @@
         </div>
     </div>
 
+    <!-- Titre des actualités récentes -->   
+    <div class="d-flex justify-content-center h-25">
+        <h2>Article récent</h2>
+    </div>
+
     <!-- Parties des articles à afficher suivant un JSON en JS -->
-    <div class="container-fluid bodyContainer"></div>
+    <div class="bodyContainer"></div>
 </main>
