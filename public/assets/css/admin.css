@@ -3,22 +3,18 @@
 .dashboard-fullContainer {
     width: 100vw;
     height: calc(100vh - 156px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 5px;
 }
 
 .dashboard-container {
-    width: 95%;
-    height: 95%;
-    background-color: #5a5a5a;
+    width: 100%;
+    height: 100%;
 }
 
 .dashboard-title {
     width: 100%;
-    height: 5%;    
+    height: 10%;    
     background-color: #cacaca;
-    border: 1px solid #5a5a5a ;
     text-align: center;
     font-weight: bold;
     display: flex;
@@ -28,34 +24,78 @@
 
 .dashboard-menu {
     width: 100%;
-    height: 20%;
+    height: 10%;
     background-color: #cacaca;
-    border-bottom: 1px solid #5a5a5a ;
-    border-left: 1px solid #5a5a5a ;
-    border-right: 1px solid #5a5a5a ;
     display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .dashboard-menu input[type=submit] {
-    /* width: 20%; */
-    flex: 1;
-    padding: 5px;
-    /* flex-grow: 1; */
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    color: #cacaca;
+    background-color: #5a5a5a;
+    padding: 0;
+    font-size: 0.9rem;
 }
 
 .dashboard-window {
     width: 100%;
-    height: 75%;
+    height: 80%;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.dashboard {
-    width: 95%;
-    height: 95%;
-    background-color: #cacaca;
+.dashboard-main {
+    width: 100%;
+    height: 100%;
+    background-color: #5a5a5a;
+}
+
+.dashboard-subTitle {
+    text-align: center;
+    color: #cacaca;
+    border-bottom: 1px solid #cacaca;
+    padding: 5px;
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    overflow-x: auto; 
+}
+
+.dashboard-content > div {
+    margin: 2px;
+    background: powderblue;
+    padding: 5px;
+}
+
+.dashboard-content > div:nth-child(7n+2) {
+    background: lemonchiffon;
+}
+
+.dashboard-content > div:nth-child(7n+3) {
+    background: green;
+}
+
+.dashboard-content > div:nth-child(7n+4) {
+    background: grey;
+}
+
+.dashboard-content > div:nth-child(7n+5) {
+    background: purple;
+}
+
+.dashboard-content > div:nth-child(7n+6) {
+    background: pink;
+}
+
+.dashboard-content > div:nth-child(7n+7) {
+    background: blue;
 }
