@@ -37,7 +37,7 @@
                                             <a class="canvasLink" href="../controller/newsCtrl.php?time=day">Du jour</a>
                                             <a class="canvasLink" href="../controller/newsCtrl.php?time=week">De la semaine</a>
                                             <a class="canvasLink" href="../controller/newsCtrl.php?time=month">Du mois</a>
-                                            <a class="canvasLink" href="../controller/newsCtrl.php?time=arhive">Archives</a>
+                                            <a class="canvasLink" href="../controller/newsCtrl.php?time=archive">Archives</a>
                                         </div>
                                     </div>
                                 </div>

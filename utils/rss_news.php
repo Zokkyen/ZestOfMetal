@@ -53,7 +53,7 @@ function GetArticlesFromFlux (SimpleXMLElement $flux, int $nbArticle) : array {
             // Remove tag a in first part of description if existing
             $descpWithoutATag = explode('<a', $partOfDescrpt[1]);
 
-            if ((count($haveTracklistResume) > 0) ||  (count($haveVisualResume) > 0)) {
+            if (((count($haveTracklistResume)-1) > 0) ||  ((count($haveVisualResume)-1) > 0)) {
                 $dataToSend[$counter][3] = '<p>' . $descpWithoutATag[0] . '</p>';
             } else {
                 $dataToSend[$counter][3] = '<p>' . $descpWithoutATag[0] . '</p><p>' . $partOfDescrpt[2] . '</p';

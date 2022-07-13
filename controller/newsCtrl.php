@@ -9,8 +9,8 @@
 
     //------------- TIME PARAMETER IN URL ---------//
     if(!empty($_GET['time'])) {
-        $time = $_GET['time'];
-        switch($time) {
+        $timeURL = $_GET['time'];
+        switch($timeURL) {
             case 'day' : 
                 $title_news = 'Actualités du jour';
                 break;
