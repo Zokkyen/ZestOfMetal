@@ -28,10 +28,12 @@
 
                     <div class="dashboard-content">
 
-                        <div>Row 1</div>
-                        <div>1.00</div>
+                        <div>Pseudo</div>
+                        <div>Adresse mail</div>
+                        <div>Status</div>
+                        <div>Nombre modifications</div>
+                        <div>Dernière modification</div>
                         <div>Description</div>
-                        <div>1.00</div>
                         <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
@@ -43,11 +45,15 @@
                         <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
+                        <div>Description</div>
+                        <div>Description</div>
 
                         <div>Row 3</div>
                         <div>1.00</div>
                         <div>Description</div>
                         <div>1.00</div>
+                        <div>Description</div>
+                        <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
@@ -59,6 +65,8 @@
                         <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
+                        <div>Description</div>
+                        <div>Description</div>
 
                         <div>Row 5</div>
                         <div>1.00</div>
@@ -67,19 +75,15 @@
                         <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
-
-                        <div>Row 6</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>1.00</div>
-                        <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
 
-                        <div>Row 7</div>
+                        <div>Row 6 too long for the first column</div>
                         <div>1.00</div>
                         <div>Description</div>
                         <div>1.00</div>
+                        <div>Description</div>
+                        <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>
                         <div>Description</div>

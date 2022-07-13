@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="../public/assets/css/home.css">
     ';
 
+    //------------- LOGIC ---------//
+    require_once(__DIR__ . '/../utils/rss_news.php');
+
     //------------- VIEWS ---------//
     include(__DIR__.'/../view/header.php');
     include(__DIR__.'/../view/navbar.php');

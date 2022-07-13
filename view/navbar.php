@@ -34,10 +34,10 @@
                                     </p>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body d-flex flex-column">
-                                            <a class="canvasLink" href="../public/assets/php/news?time=day.php">Du jour</a>
-                                            <a class="canvasLink" href="../public/assets/php/news?time=week.php">De la semaine</a>
-                                            <a class="canvasLink" href="../public/assets/php/news?time=mounth.php">Du mois</a>
-                                            <a class="canvasLink" href="../public/assets/php/news?time=archive.php">Archives</a>
+                                            <a class="canvasLink" href="../controller/newsCtrl.php?time=day">Du jour</a>
+                                            <a class="canvasLink" href="../controller/newsCtrl.php?time=week">De la semaine</a>
+                                            <a class="canvasLink" href="../controller/newsCtrl.php?time=month">Du mois</a>
+                                            <a class="canvasLink" href="../controller/newsCtrl.php?time=arhive">Archives</a>
                                         </div>
                                     </div>
                                 </div>

@@ -1,6 +1,67 @@
-.container {
-    width: 100vw;
-    height: calc(100vh - 4rem - 60px);
-    padding-top: 5%;
-    padding-bottom: 5%;
+/* Format des actualités page des news */
+
+.newsContainer {
+    width: 50%;
+    height: calc(100vh - 3.4rem - 160px);
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleNews {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-family: "metalFont", serif;
+    font-size: 1.8rem;
+    color: #cacaca;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-top: 1px solid #5a5a5a;
+    width: 100%;
+}
+
+article h3 {
+    font-family: "metalFont", serif;
+    font-size: 1.5rem;
+    color: #5a5a5a;
+    padding-left: 20px;
+}
+
+.myArticleBody {
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, .2);
+    padding: 15px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.articleTitle {
+    font-size: 1.0rem !important;
+    color: #5a5a5a;
+    padding: 0 !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bandPicture {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+center iframe{
+    width: 90% !important;
+    height: fit-content !important;
 }

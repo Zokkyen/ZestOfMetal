@@ -74,17 +74,17 @@ article h3 {
     font-family: "metalFont", serif;
     font-size: 1.5rem;
     color: #5a5a5a;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .myArticleBody {
-    width: 95%;
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     background: rgba(255, 255, 255, .2);
-    padding: 15px;
+    padding: 10px;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
@@ -103,27 +103,9 @@ article h3 {
     object-position: center center;
 }
 
-.bandInfos {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin: 0;
-    color: #CACACA;
-    font-size: 0.9rem;
-    bottom: 10px;
-}
-
-.bandInfos p {
-    margin: 0;
-    font-size: 1.0rem;
-    padding: 2px;
-    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-
-.albumPicture {
-    width: calc(15vh + 15vw);
-    height: calc(15vh + 15vw);
-    padding: 0px 0px 5px 5px;
+center iframe{
+    width: 90% !important;
+    height: fit-content !important;
 }
 
 /* Animation d'affichage des informations */

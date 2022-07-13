@@ -46,6 +46,24 @@
         <h2>Article récent</h2>
     </div>
 
-    <!-- Parties des articles à afficher suivant un JSON en JS -->
-    <div class="bodyContainer"></div>
+    <!-- Affichage dynamique des articles en fonction du flux RSS de Radio Metal -->
+    <?php
+        $nbOfArticle = 10;
+        $articleArray = GetArticlesFromFlux($flux_news, $nbOfArticle);
+
+        for ($i = 0; $i < $nbOfArticle; $i++) {
+        ?>
+            <article class="js-scroll fade-in-bottom">
+                <h3>Publié le <?= $articleArray[$i][1] ?></h3>
+                <div class="myArticleBody">
+                    <?= $articleArray[$i][2] ?>
+                    <p class="articleTitle"><strong><?= $articleArray[$i][0] ?></strong></p>
+                    <div class="pt-2 border-top border-dark">
+                        <span><?= $articleArray[$i][3] ?></span>
+                    </div>
+                </div>                  
+            </article>
+    <?php
+    } ?>
+
 </main>
