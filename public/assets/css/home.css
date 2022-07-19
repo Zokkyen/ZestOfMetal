@@ -28,8 +28,10 @@
     left: 50%;
     transform: translate(-50%, -10%);
     height: 10vh;
-    width: 80%;
+    width: 100%;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .welcomeFirst p,
@@ -48,13 +50,52 @@
     left: 50%;
     transform: translate(-50%, -10%);
     height: 10vh;
-    width: 80%;
+    width: 100%;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.welcomeLast img {
+.arrowDown {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    height: 5vh;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.arrowDown img {
     width: 2.0em;
+    height: 2.0em;
     filter: invert(74%) sepia(14%) saturate(0%) hue-rotate(67deg) brightness(103%) contrast(103%);
+}
+
+@media (min-width: 992px) {
+    .welcomeFirst {
+        justify-content: start;
+    }
+    .welcomeFirst div{
+        width: 30% !important;
+        margin-left: 50px;
+    }
+
+    .welcomeLast {
+        align-items: end;
+    }   
+    .welcomeLast div{
+        width: 30% !important;
+        margin-right: 50px;
+    }   
+
+    .arrowDown img {
+        width: 2.5em;
+        height: 2.5em;
+    }
 }
 
 /* Format des actualités page d'accueil */
@@ -78,7 +119,7 @@ article h3 {
 }
 
 .myArticleBody {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;

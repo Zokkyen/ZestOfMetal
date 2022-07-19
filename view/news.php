@@ -12,10 +12,14 @@
                 <p>Aucun nouvel article n'est encore disponible pour ce jour.</p>
             </div>";
     } else {
+?>
 
-        for ($i = 0; $i < (count($articleArray)-1); $i++) {
+<div class="container-fluid">
+    <div class="row">
+        <?php
+            for ($i = 0; $i < (count($articleArray)-1); $i++) {
         ?> 
-            <article class="js-scroll fade-in-bottom">
+            <article class="col-12 col-md-6 col-lg-4 col-xxl-3 js-scroll fade-in-bottom">
                 <h3>Publié le <?= $articleArray[$i][1] ?></h3>
                 <div class="myArticleBody">
                     <?= $articleArray[$i][2] ?>
@@ -28,4 +32,6 @@
         <?php
         } 
     }
-?>
+    ?>        
+    </div>
+</div>

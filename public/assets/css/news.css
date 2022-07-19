@@ -1,20 +1,20 @@
 /* Format des actualités page des news */
-
-.newsContainer {
-    width: 50%;
-    height: calc(100vh - 3.4rem - 160px);
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .titleNews {
     height: 60px;
     display: flex;
     justify-content: center;
     background-color: black;
     margin-bottom: 50px;
+}
+
+.newsContainer {
+    width: 50%;
+    height: calc(100vh - 3.4rem - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
@@ -64,4 +64,19 @@ article h3 {
 center iframe{
     width: 90% !important;
     height: fit-content !important;
+}
+
+@media (min-width: 768px) {
+    .titleNews {
+        background-color:transparent;
+    }
+
+    h2 {
+        padding: 20px;
+        color: black;
+    }   
+
+    .newsContainer {
+        width: 100%;
+    }
 }

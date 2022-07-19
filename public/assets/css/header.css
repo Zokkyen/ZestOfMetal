@@ -37,10 +37,7 @@ body {
 .navbar {
     background-color: black;
     z-index: 99;
-}
-
-.offcanvas-end {
-    width: 60% !important;
+    height: 58px;
 }
 
 .canvasLink {
@@ -48,6 +45,14 @@ body {
     text-decoration: none !important;
     color: #cacaca;
     margin: 5px;
+}
+
+.dropdown-item {
+    color: #cacaca;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: black !important;
 }
 
 .logoSite {
@@ -79,7 +84,7 @@ h1 {
     padding-right: 0 !important;
 }
 
-.accordion-header button {
+.accordion-header button, .dropdown-center button {
     color: #cacaca !important;
 }
 
@@ -92,22 +97,69 @@ h1 {
     font-size: 1.0rem !important;
 }
 
+.offcanvas-end {
+    width: 60% !important;
+}
+
+/* Changer type de menu Mobile/Desktop */
+
 .accordion-item {
     border-bottom: 0 !important;
     background-color: transparent !important;
+    margin-left: 0;
+    margin-right: 0;
 }
 
+.title-mobile-desktop {
+    margin: 0;
+    font-size: 1.5rem !important;
+    white-space: nowrap;
+}
+
+.navbar-mobile {
+    display: block;
+}
+
+.navbar-desktop {
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    .offcanvas-end {
+        width: 30% !important;
+    }
+}
 
 @media (min-width: 992px) { 
+    .accordion-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
+    .navbar-mobile {
+        display: none;
+    }
 
-    
+    .navbar-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-mobile-desktop {
+        margin: 0;
+        font-size: 1.8rem !important;
+        white-space: nowrap;
+        text-align: start;
+        padding-left: 10px;
+    }
+
 }
 
 /*---------- CSS bouton login et logo compte ----------*/
 
 .connectButton {
-    margin: 10px 0 10px 10px;
+    margin: 5px 0 5px 5px;
     display: inline;
     height: 2.5rem;
     width: 7rem;
@@ -140,4 +192,20 @@ h1 {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+}
+
+/*---------- Dropdown Desktop smooth effect ----------*/
+
+.dropdown-menu {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    display: block;
+    opacity: 0;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
 }

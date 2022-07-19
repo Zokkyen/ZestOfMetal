@@ -15,3 +15,20 @@
     filter: invert(74%) sepia(14%) saturate(0%) hue-rotate(67deg) brightness(103%) contrast(103%);
     width: 2em;
 }
+
+@media (min-width: 768px) {
+    .col-6 img {
+        width: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        height: 60px;
+    }
+
+    .col-6 img {
+        width: 2.8em;
+        padding: 5px;
+    }
+}
