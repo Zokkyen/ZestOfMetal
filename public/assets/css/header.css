@@ -23,8 +23,9 @@ body {
 /*---------- Partie du Header ----------*/
 
 .navbar-toggler-icon {
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2.0rem;
+    height: 2.0rem;
+    padding: 2px;
     background-image: url("../img/ICO/menu.png");
     filter: invert(74%) sepia(14%) saturate(0%) hue-rotate(67deg) brightness(103%) contrast(103%);
 }
@@ -51,6 +52,10 @@ body {
 
 .logoSite {
     width: 3.0rem;
+    height: 3.0rem;
+    padding: 3px;
+    object-fit: contain;
+    object-position: center center;
 }
 
 h1 {
@@ -90,6 +95,13 @@ h1 {
 .accordion-item {
     border-bottom: 0 !important;
     background-color: transparent !important;
+}
+
+
+@media (min-width: 992px) { 
+
+
+    
 }
 
 /*---------- CSS bouton login et logo compte ----------*/

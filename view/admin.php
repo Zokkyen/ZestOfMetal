@@ -33,74 +33,27 @@
                         <div>Status</div>
                         <div>Nombre modifications</div>
                         <div>Dernière modification</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
 
-                        <div>Row 2</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
 
-                        <div>Row 3</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-
-                        <div>Row 4 too long for the first column</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-
-                        <div>Row 5</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-
-                        <div>Row 6 too long for the first column</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>1.00</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
-                        <div>Description</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        <div>ok</div>
+                        
                     </div>
-
-
                 </div>
-
-
-
-
-
-
-
-
-
-
             </div>
         </div>
     </div>

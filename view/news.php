@@ -6,14 +6,14 @@
 <!-- Affichage dynamique des articles en fonction du flux RSS de Radio Metal -->
 <?php
     $articleArray = GetArticlesFromTime($flux_articles, $timeURL);
-    if(count($articleArray) < 1){
+    if((count($articleArray)-1) < 1){
 
         echo "<div class='newsContainer'>
                 <p>Aucun nouvel article n'est encore disponible pour ce jour.</p>
             </div>";
     } else {
 
-        for ($i = 0; $i < (count($articleArray)); $i++) {
+        for ($i = 0; $i < (count($articleArray)-1); $i++) {
         ?> 
             <article class="js-scroll fade-in-bottom">
                 <h3>Publié le <?= $articleArray[$i][1] ?></h3>
