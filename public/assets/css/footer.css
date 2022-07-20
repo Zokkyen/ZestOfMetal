@@ -6,9 +6,11 @@
     color: #cacaca;
 }
 
-.col-6 a {
+.col-12 a {
     color: #cacaca;
     text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .col-6 img {
@@ -28,7 +30,7 @@
     }
 
     .col-6 img {
-        width: 2.8em;
-        padding: 5px;
+        width: 2.0em;
+        /* padding: 5px; */
     }
 }

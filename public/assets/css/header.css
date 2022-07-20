@@ -21,6 +21,11 @@ body {
 }
 
 /*---------- Partie du Header ----------*/
+.navbar {
+    background-color: black;
+    z-index: 99;
+    height: 60px;
+}
 
 .navbar-toggler-icon {
     width: 2.0rem;
@@ -32,12 +37,6 @@ body {
 
 .navbar-toggler {
     border: 0 !important;
-}
-
-.navbar {
-    background-color: black;
-    z-index: 99;
-    height: 58px;
 }
 
 .canvasLink {
