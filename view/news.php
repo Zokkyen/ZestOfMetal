@@ -19,7 +19,7 @@
         <?php
             for ($i = 0; $i < (count($articleArray)-1); $i++) {
         ?> 
-            <article class="col-12 col-md-6 col-lg-4 col-xxl-3 js-scroll fade-in-bottom">
+            <article class="col-12 col-md-6 col-lg-5 col-xxl-4 js-scroll fade-in-bottom">
                 <h3>Publié le <?= $articleArray[$i][1] ?></h3>
                 <div class="myArticleBody">
                     <?= $articleArray[$i][2] ?>

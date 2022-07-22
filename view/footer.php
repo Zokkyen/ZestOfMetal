@@ -1,10 +1,10 @@
 
     <!-- Partie Footer -->
     <footer>
-        <div class="container-fluid footer sticky-bottom">
+        <div class="container-fluid footer">
             <div class="row h-100">
 
-                <div class="col-6 col-md-7 text-center d-flex justify-content-center align-items-center p-1">
+                <div class="col-6 text-center d-flex justify-content-center align-items-center p-1">
                     <div class="row align-items-center justify-content-center w-100">
                         <div class="col-12 col-md-3 col-lg-4">
                             <p class="m-0 p-1">&#169;Zokkyen</p>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-5 text-center d-flex justify-content-center align-items-center p-1">
+                <div class="col-6 text-center d-flex justify-content-center align-items-center p-1">
                     <div class="row align-items-center justify-content-center h-100 w-100">
                         <div class="col-6 col-md-3 col-md-3 col-lg-2 p-0">
                             <a href="https://www.facebook.com/zestofmetal" target="_blank">
